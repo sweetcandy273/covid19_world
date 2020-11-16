@@ -14,7 +14,7 @@ con.connect(function (err) {
         //อยากให้แสดงอะไรแก้ที่ sql
         const sql = "select `COL 2`,`COL 66` from `covid19_confirmed`";
         var total_confirmed;
-        con.query(sql, function (err, result) {
+        con.query(sql, function (err, result,fields) {
             if (err) {
                 throw err; 
             } else {
